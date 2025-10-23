@@ -1,0 +1,1 @@
+package com.scoreapp.repository; import com.scoreapp.model.User; import java.util.*; public interface UserRepository { void save(User u); Optional<User> findByEmail(String email); List<User> listAll(); }

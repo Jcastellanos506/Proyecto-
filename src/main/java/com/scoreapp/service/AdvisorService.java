@@ -1,0 +1,1 @@
+package com.scoreapp.service; import com.scoreapp.model.*; import java.util.*; public class AdvisorService { private final List<Advisor> advisors; public AdvisorService(List<Advisor> a){this.advisors=a;} public List<String> aggregateAdvice(User u, ScoreResult s){ List<String> all=new ArrayList<>(); for(Advisor a:advisors) all.addAll(a.advise(u,s)); return all; } }

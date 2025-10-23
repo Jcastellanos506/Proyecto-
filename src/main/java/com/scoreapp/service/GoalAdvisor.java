@@ -1,0 +1,1 @@
+package com.scoreapp.service; import java.util.*; import com.scoreapp.model.*; public class GoalAdvisor extends Advisor { @Override public List<String> advise(User u, ScoreResult s){ return List.of("Meta: +50 puntos en 3 meses."); } }

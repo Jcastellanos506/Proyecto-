@@ -1,0 +1,1 @@
+package com.scoreapp.service; import com.scoreapp.model.*; public class ScoreService { private final ScoreCalculator calc; public ScoreService(ScoreCalculator c){this.calc=c;} public ScoreResult compute(User u){ return calc.compute(u);} }
